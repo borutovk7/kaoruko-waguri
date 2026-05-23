@@ -51,6 +51,12 @@ cd Kauroko-bot
 ### 4️⃣ Instalação de Dependências e Início
 ```bash
 npm install && npm start
+
+### ⚠️ COMANDO OBRIGATÓRIO (QUALQUER AMBIENTE)
+Após o install, você **PRECISA** rodar este comando para o Canvas funcionar (Termux/VPS/Windows):
+```bash
+node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
+```
 ```
 
 ---
