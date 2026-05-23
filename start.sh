@@ -1,51 +1,28 @@
 #!/bin/bash
 
-# Cores para o terminal
+# Cores
 GREEN='\033[0;32m'
 PURPLE='\033[0;35m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
+clear
 echo -e "${PURPLE}=======================================${NC}"
-echo -e "${GREEN}    KAORUKO WAGURI - AUTO UPDATE      ${NC}"
-echo -e "${PURPLE}=======================================${NC}"
-
-# Verificar atualizações no GitHub
-echo -e "${GREEN}[INFO]${NC} Verificando atualizações no GitHub..."
-git fetch origin main
-
-# Comparar versão local com a remota
-LOCAL=$(git rev-parse HEAD)
-REMOTE=$(git rev-parse @{u})
-
-if [ $LOCAL != $REMOTE ]; then
-    echo -e "${PURPLE}[UPDATE]${NC} Nova versão encontrada! Atualizando..."
-    
-    # Salvar mudanças locais temporariamente (como configs)
-    git stash
-    
-    # Puxar a nova versão
-    git pull origin main
-    
-    # Restaurar mudanças locais (se houver)
-    git stash pop
-    
-    echo -e "${GREEN}[SUCCESS]${NC} Bot atualizado com sucesso!"
-    
-    # Reinstalar dependências se o package.json mudou
-    echo -e "${GREEN}[INFO]${NC} Verificando novas dependências..."
-    npm install
-else
-    echo -e "${GREEN}[INFO]${NC} O bot já está na versão mais recente."
-fi
-
-echo -e "${PURPLE}=======================================${NC}"
-echo -e "${GREEN}[START]${NC} Iniciando o Kaoruko Waguri System..."
+echo -e "${GREEN}    KAORUKO WAGURI - SUPER UPDATE     ${NC}"
 echo -e "${PURPLE}=======================================${NC}"
 
-# Loop para reiniciar em caso de erro
+# Tentar atualizar de forma forçada para evitar erros de conflito
+echo -e "${GREEN}[INFO]${NC} Verificando e forçando atualização..."
+git fetch --all
+git reset --hard origin/main
+
+echo -e "${GREEN}[SUCCESS]${NC} Sistema sincronizado com o GitHub!"
+echo -e "${PURPLE}=======================================${NC}"
+
+# Iniciar o bot com reinicialização automática
 while :
 do
+    echo -e "${GREEN}[START]${NC} Iniciando Kaoruko Waguri..."
     node index.js
-    echo -e "${PURPLE}[RESTART]${NC} Bot parou inesperadamente. Reiniciando em 5 segundos..."
+    echo -e "${PURPLE}[RESTART]${NC} Bot caiu. Reiniciando em 5 segundos..."
     sleep 5
 done
