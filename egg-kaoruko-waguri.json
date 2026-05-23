@@ -3,16 +3,17 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2026-05-23T13:29:04Z",
-    "name": "Kaoruko Waguri Bot",
+    "exported_at": "2026-05-23T13:31:13Z",
+    "name": "Kaoruko Waguri Bot (Advanced)",
     "author": "borutovk7",
-    "description": "Egg oficial para o Bot Kaoruko Waguri com auto-update e suporte a Canvas.",
+    "description": "Egg avançada com configuração dinâmica via variáveis de ambiente.",
     "features": null,
     "docker_images": {
-        "Node.js 20 (Generic)": "ghcr.io/pterodactyl/builders:node_20"
+        "Node.js 20 (Generic)": "ghcr.io/pterodactyl/builders:node_20",
+        "Node.js 22 (Generic)": "ghcr.io/pterodactyl/builders:node_22"
     },
     "file_denylist": [],
-    "startup": "if [ -d .git ]; then git fetch --all && git reset --hard origin/main; fi; npm install && node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs && node index.js",
+    "startup": "if [ -d .git ]; then git fetch --all && git reset --hard origin/main; fi; npm install && node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs && python3 -c \"import json; c=json.load(open('configs/configs.json')); c['NomeDoBot']='{{BOT_NAME}}'; c['ownerName']='{{OWNER_NAME}}'; c['prefix']='{{BOT_PREFIX}}'; json.dump(c, open('configs/configs.json','w'), indent=2); n=json.load(open('configs/nescessario.json')); n['numero_dono1']='{{OWNER_NUMBER}}'; json.dump(n, open('configs/nescessario.json','w'), indent=2); a=json.load(open('configs/apikeys.json')); a['apis']['API_KEY_WAGURI']='{{API_KEY}}'; json.dump(a, open('configs/apikeys.json','w'), indent=2)\" && node index.js",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Sessão carregada com sucesso\"\r\n}",
@@ -23,18 +24,58 @@
         "installation": {
             "container": "node:20-bookworm-slim",
             "entrypoint": "bash",
-            "script": "#!/bin/bash\r\napt update\r\napt install -y git curl python3 make g++\r\n\r\ncd /home/container\r\ngit clone https://github.com/borutovk7/Kauroko-bot.git .\r\nnpm install\r\nnode ./node_modules/@irithell-js/canvas-termux/dist/install.cjs\r\n\r\necho \"Instalação concluída com sucesso!\""
+            "script": "#!/bin/bash\r\napt update\r\napt install -y git curl python3 make g++\r\ncd /home/container\r\ngit clone https://github.com/borutovk7/Kauroko-bot.git .\r\nnpm install\r\nnode ./node_modules/@irithell-js/canvas-termux/dist/install.cjs"
         }
     },
     "variables": [
         {
-            "name": "Branch do GitHub",
-            "description": "Qual branch do repositório deve ser usada.",
-            "env_var": "GITHUB_BRANCH",
-            "default_value": "main",
+            "name": "Nome do Bot",
+            "description": "Nome que o bot usará.",
+            "env_var": "BOT_NAME",
+            "default_value": "Kaoruko Waguri",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:50",
+            "field_type": "text"
+        },
+        {
+            "name": "Nome do Dono",
+            "description": "Seu nome.",
+            "env_var": "OWNER_NAME",
+            "default_value": "Boruto",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:50",
+            "field_type": "text"
+        },
+        {
+            "name": "Número do Dono",
+            "description": "Seu número (com 55).",
+            "env_var": "OWNER_NUMBER",
+            "default_value": "5511999999999",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Prefix do Bot",
+            "description": "O símbolo para comandos.",
+            "env_var": "BOT_PREFIX",
+            "default_value": ".",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "API Key Waguri",
+            "description": "Sua chave de API.",
+            "env_var": "API_KEY",
+            "default_value": "sua_key_aqui",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:100",
             "field_type": "text"
         }
     ]
