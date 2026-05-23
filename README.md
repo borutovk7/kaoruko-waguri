@@ -104,3 +104,6 @@ Precisa de ajuda ou quer sugerir uma funcionalidade? Entre em contato diretament
   Desenvolvido com ❤️ por <b>Eduardo Dev</b><br>
   © 2026 Kaoruko System - Todos os direitos reservados.
 </p>
+
+## 📜 Créditos
+Todos os créditos originais deste projeto pertencem à **Lia** (ou Lya). Esta versão foi modificada e otimizada por **Boruto**.
