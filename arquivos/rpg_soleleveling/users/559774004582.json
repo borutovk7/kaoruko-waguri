@@ -1,0 +1,105 @@
+{
+  "id": "559774004582",
+  "nome": "Sung Jin-Woo",
+  "rank": "D (Oculto S)",
+  "job": "Monarca das Sombras",
+  "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+  "level": 5,
+  "exp": 164,
+  "exp_next": 206,
+  "stats": {
+    "forca": 21,
+    "agilidade": 18,
+    "inteligencia": 18,
+    "percepcao": 18,
+    "vitalidade": 21
+  },
+  "hp": 759,
+  "hp_max": 1400,
+  "mp": 640,
+  "mp_max": 700,
+  "equipamento": {
+    "cabeca": null,
+    "peito": "Armadura de Ferro",
+    "pernas": null,
+    "arma": "Espada de Ferro",
+    "acessorio": null
+  },
+  "skills": [
+    "Ataque Básico",
+    "Esquiva",
+    "Punhal das Sombras"
+  ],
+  "shadows": [
+    {
+      "nome": "Sombra de Cobra do Pântano",
+      "rank": "Elite",
+      "extraida_em": "20/04/2026",
+      "stats": {
+        "forca": 11,
+        "agilidade": 9
+      }
+    },
+    {
+      "nome": "Sombra de Crocodilo Mutante",
+      "rank": "Cavaleiro",
+      "extraida_em": "20/04/2026",
+      "stats": {
+        "forca": 12,
+        "agilidade": 10
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "id": "espada_ferro",
+      "nome": "Espada de Ferro",
+      "tipo": "Arma",
+      "rank": "D",
+      "preco": 5000,
+      "preco_venda": 2000,
+      "slot": "arma",
+      "efeito": "Ataque +25",
+      "stats": {
+        "ataque": 25,
+        "forca": 3
+      },
+      "descricao": "Espada forjada em ferro de alta qualidade.",
+      "emoji": "⚔️",
+      "qtd": 1
+    },
+    {
+      "id": "armadura_ferro",
+      "nome": "Armadura de Ferro",
+      "tipo": "Armadura",
+      "rank": "D",
+      "preco": 4000,
+      "preco_venda": 1600,
+      "slot": "peito",
+      "efeito": "Defesa +20",
+      "stats": {
+        "defesa": 20,
+        "vitalidade": 3
+      },
+      "descricao": "Armadura sólida forjada em ferro.",
+      "emoji": "🛡️",
+      "qtd": 1
+    }
+  ],
+  "gold": 4900,
+  "guilda": null,
+  "daily": {
+    "flexoes": 100,
+    "abdominais": 100,
+    "agachamentos": 100,
+    "corrida": 10,
+    "date": "Mon Apr 20 2026",
+    "completed": true
+  },
+  "history": [],
+  "pvp_wins": 0,
+  "pvp_losses": 0,
+  "total_kills": 2,
+  "dungeons_cleared": 2,
+  "hunter_id": "sung_jin_woo"
+}

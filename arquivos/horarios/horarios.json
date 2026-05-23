@@ -1,0 +1,207 @@
+[
+  {
+    "groupId": "120363401497642486@g.us",
+    "start": false,
+    "fundoperso": false,
+    "url": "",
+    "horarios": [
+      {
+        "id": "1008162111",
+        "tempo": "16:25",
+        "dias": 0,
+        "save": "10",
+        "nmr": 1,
+        "letra": "m"
+      },
+      {
+        "id": "1008162321",
+        "tempo": "16:25",
+        "dias": 0,
+        "save": "10",
+        "nmr": 1,
+        "letra": "m"
+      }
+    ]
+  },
+  {
+    "groupId": "120363402435002712@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363417638619610@g.us",
+    "start": false,
+    "fundoperso": false,
+    "url": "",
+    "horarios": [
+      {
+        "id": "1008030953",
+        "tempo": "03:24",
+        "dias": 0,
+        "save": "10",
+        "nmr": 1,
+        "letra": "m"
+      }
+    ]
+  },
+  {
+    "groupId": "120363419275126894@g.us",
+    "start": false,
+    "fundoperso": false,
+    "url": "",
+    "horarios": [
+      {
+        "id": "1008192054",
+        "tempo": "19:22",
+        "dias": 0,
+        "save": "10",
+        "nmr": 1,
+        "letra": "m"
+      }
+    ]
+  },
+  {
+    "groupId": "120363399534146757@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363402984977517@g.us",
+    "start": false,
+    "fundoperso": false,
+    "url": "",
+    "horarios": [
+      {
+        "id": "3108143658",
+        "tempo": "14:38",
+        "dias": 0,
+        "save": "31",
+        "nmr": 1,
+        "letra": "m"
+      }
+    ]
+  },
+  {
+    "groupId": "120363402033659488@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363419947024023@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363418453826082@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363403845455749@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363418001752639@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363402909185547@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363417100887377@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363420834582172@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363403199672981@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363421326722032@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363421446451207@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363420895405238@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363419561626993@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363418754293912@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363401587407892@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363403734811463@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  },
+  {
+    "groupId": "120363193525588420@g.us",
+    "start": true,
+    "fundoperso": false,
+    "url": "",
+    "horarios": []
+  }
+]

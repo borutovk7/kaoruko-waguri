@@ -1,0 +1,30 @@
+{
+"apis": {
+"API_KEY_KYOMI": "WaguriSystem26",
+"API_KEY_UPLOAD":"tc_6e16041e299b8936ddc7ef8d790461a5bdbc83bd02c85209",
+"API_KEY_OKARUN": "WaguriSystem26",
+"API_KEY_BRONXYS": "WaguriSystem26",
+"OPENROUTER_API_KEY": "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",
+"API_KEY_ZEROTWO":"Kyomi_bot26",
+"API_KEY_CONSULT": "Eduhzin_dev21",
+"API_KEY_WAGURI": "WaguriSystem26",
+"CLOUDINARY_CLOUD_NAME":"dlmoujcpv", 
+"CLOUDINARY_API_KEY":"452143746259811",
+"CLOUDINARY_API_SECRET":"_NP9QUw_KTOB9Xm5pSaOyoe7u1A",
+"API_KEY_ASSEMBLY":"60160aaafebb4a28b028176955783c65", 
+"GITHUB_TOKEN":"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", 
+"GITHUB_USER":"borutovk7", 
+"GITHUB_REPO":"kauroko-audios", 
+"GITHUB_BRANCH":"main",
+"GEMINI_API_KEY": "AIzaSyCO9pHY-sZGEPkFYInOfyW7dQWCm1-TYV4"
+},
+"sites": {
+"okarunsite": "https://okarun-api.com.br",
+"annysite": "https://anny-kyomi.online",
+"zerosite": "https://zero-two-apis.com.br",
+"uploadsite":"https://files.trindadehost.com/api/upload/api"
+},
+"groups": {
+"group": "120363410032693116@newsletter"
+}
+}

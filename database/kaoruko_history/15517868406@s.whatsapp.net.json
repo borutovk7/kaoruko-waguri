@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "text": "Olá 👋, o Suporte do WhatsApp agradece seu contato. Como podemos ajudar?"
+  },
+  {
+    "role": "model",
+    "text": "Não é necessário responder a essa mensagem, pois não é uma solicitação direcionada a mim. Além disso, a mensagem parece ser um modelo de resposta automática do suporte do WhatsApp. Se você tiver alguma pergunta ou precisar de assistência, por favor, forneça mais informações para que eu possa ajudar. \n\nPara iniciar, gostaria de saber o que você precisa. Posso executar várias ações, como pesquisar na web, buscar no YouTube, baixar música ou vídeo do YouTube, falar em voz alta, salvar um fato sobre você ou gerar uma imagem. Por favor, especifique o que você deseja que eu faça. \n\nSe necessário, posso listar os comandos disponíveis para você. Basta solicitar."
+  },
+  {
+    "role": "user",
+    "text": "Eu estou aqui para ajudar com problemas relacionados ao WhatsApp. Você tem alguma dúvida ou precisa de assistência com o aplicativo?"
+  },
+  {
+    "role": "model",
+    "text": "Não tenho dúvidas ou problemas com o WhatsApp no momento. Estou aqui para fornecer informações e responder a perguntas sobre uma variedade de tópicos, incluindo código, finanças, política e temas técnicos. Se você tiver alguma pergunta específica sobre esses assuntos, posso tentar ajudar. \n\nSe desejar saber sobre algum tópico específico, basta me informar e farei o meu melhor para fornecer uma resposta detalhada e objetiva. \n\nPor exemplo, se você quiser saber sobre estruturas de dados em Python, posso fornecer uma explicação detalhada. \n\nBasta me informar sobre o que você gostaria de saber."
+  }
+]

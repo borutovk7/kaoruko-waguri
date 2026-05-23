@@ -1,0 +1,50 @@
+[
+  {
+    "ids": [
+      "559791697240@s.whatsapp.net",
+      "556196290831@s.whatsapp.net"
+    ],
+    "pedido": [],
+    "namoro": [
+      {
+        "ativo": true,
+        "aguarde": false,
+        "data": {
+          "hora": "02",
+          "minuto": "56",
+          "segundo": "37",
+          "dia": "02",
+          "mes": "09",
+          "ano": "2025"
+        }
+      }
+    ],
+    "casamento": [],
+    "amantes": [],
+    "pedidosAmantes": []
+  },
+  {
+    "ids": [
+      "559774004582@s.whatsapp.net",
+      "5517981943531@s.whatsapp.net"
+    ],
+    "pedido": [],
+    "namoro": [
+      {
+        "ativo": true,
+        "aguarde": false,
+        "data": {
+          "hora": "09",
+          "minuto": "22",
+          "segundo": "37",
+          "dia": "01",
+          "mes": "04",
+          "ano": "2026"
+        }
+      }
+    ],
+    "casamento": [],
+    "amantes": [],
+    "pedidosAmantes": []
+  }
+]

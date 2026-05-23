@@ -1,0 +1,22 @@
+{
+  "logo": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1778376290/trindade-1778376289268.jpg",
+  "menu": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1777186709/trindade-1777186706755.jpg",
+  "fotobot": "https://kyomi-storage.online/Uploads/images/gXX1o2xEZ.jpeg",
+  "ping": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1778719563/trindade-1778719562266.jpg",
+  "gifping": "https://res.cloudinary.com/dlmoujcpv/video/upload/v1775919013/trindade-1775919011509.mp4",
+  "Message": {
+    "Aviso": "⚠️ CUIDADO! Essas imagens são usadas no bot. Não apague nenhuma chave.",
+    "ComoEditar": "Para trocar a logo, menu, foto do bot ou imagem do ping, basta substituir o link por outro link direto de imagem.",
+    "Regras": {
+      "1": "Sempre use links diretos (terminando em .jpg, .jpeg, .png ou .webp)",
+      "2": "Nunca remova aspas nem vírgulas",
+      "3": "Mantenha o nome das chaves exatamente igual"
+    },
+    "ExemploDeAlteracao": {
+      "logo": "https://meuservidor.com/minha_logo.jpg",
+      "menu": "https://cdn.com/meumenu.png",
+      "fotobot": "https://site.com/bot.webp",
+      "ping": "https://host.com/ping.jpg"
+    }
+  }
+}

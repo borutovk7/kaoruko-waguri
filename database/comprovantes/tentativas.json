@@ -1,0 +1,60 @@
+{
+  "total_tentativas": 6,
+  "por_usuario": {
+    "559774004582": {
+      "nome": "Eduh Dev </>",
+      "total_tentativas": 3,
+      "pagamentos_concluidos": 2,
+      "tentativas_nao_pagas": 1,
+      "valor_total_tentado": 12,
+      "valor_total_pago": 2
+    },
+    "5522999923813": {
+      "nome": "usuário",
+      "total_tentativas": 2,
+      "pagamentos_concluidos": 0,
+      "tentativas_nao_pagas": 2,
+      "valor_total_tentado": 40,
+      "valor_total_pago": 0
+    },
+    "559492725537": {
+      "nome": "usuário",
+      "total_tentativas": 1,
+      "pagamentos_concluidos": 0,
+      "tentativas_nao_pagas": 1,
+      "valor_total_tentado": 20,
+      "valor_total_pago": 0
+    }
+  },
+  "nao_pagaram": [
+    {
+      "numero": "559774004582",
+      "nome": "Eduh Dev </>",
+      "valor": 10,
+      "data": "2026-03-06T15:56:06.424Z",
+      "status": "PENDENTE"
+    },
+    {
+      "numero": "5522999923813",
+      "nome": "usuário",
+      "valor": 20,
+      "data": "2026-03-06T16:01:48.365Z",
+      "status": "PENDENTE"
+    },
+    {
+      "numero": "5522999923813",
+      "nome": "usuário",
+      "valor": 20,
+      "data": "2026-03-06T16:21:04.229Z",
+      "status": "PENDENTE"
+    },
+    {
+      "numero": "559492725537",
+      "nome": "usuário",
+      "valor": 20,
+      "data": "2026-03-06T16:28:35.211Z",
+      "status": "PENDENTE"
+    }
+  ],
+  "ultima_atualizacao": "2026-04-25T04:43:05.480Z"
+}

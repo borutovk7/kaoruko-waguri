@@ -1,0 +1,103 @@
+[
+  {
+    "id": "quest_001",
+    "titulo": "O Primeiro Despertar",
+    "rank": "E",
+    "tipo": "historia",
+    "nivel_minimo": 1,
+    "descricao": "Você foi detectado pelo Sistema como alguém com potencial oculto. Para provar seu valor, derrote 5 monstros nas dungeons mais simples.",
+    "historia": "O Sistema falou com você pela primeira vez:\n\n'Caçador detectado. Potencial oculto identificado. Para ativar seus poderes latentes, complete a missão de iniciação.'",
+    "objetivos": [
+      { "tipo": "matar", "quantidade": 5, "descricao": "Derrote 5 monstros em dungeons", "campo": "total_kills" }
+    ],
+    "recompensas": { "exp": 300, "gold": 2000, "item": "cristal_exp" },
+    "proxima_quest": "quest_002"
+  },
+  {
+    "id": "quest_002",
+    "titulo": "Provas de Sangue",
+    "rank": "D",
+    "tipo": "historia",
+    "nivel_minimo": 5,
+    "descricao": "O Sistema exige mais de você. Derrote 15 monstros e complete 3 dungeons para provar que você é digno de evoluir.",
+    "historia": "O Sistema: 'Sua evolução está estagnada. O sangue de caçadores fracos não nutre o Sistema. Prove que você pode ir além.'",
+    "objetivos": [
+      { "tipo": "matar",   "quantidade": 15, "descricao": "Derrote 15 monstros",    "campo": "total_kills"        },
+      { "tipo": "dungeon", "quantidade": 3,  "descricao": "Complete 3 dungeons",     "campo": "dungeons_cleared"   }
+    ],
+    "recompensas": { "exp": 800, "gold": 5000, "item": "life_potion_grande" },
+    "proxima_quest": "quest_003"
+  },
+  {
+    "id": "quest_003",
+    "titulo": "A Ira dos Mortos",
+    "rank": "C",
+    "tipo": "historia",
+    "nivel_minimo": 15,
+    "descricao": "Rumores de uma invasão de mortos-vivos nas Ruínas Esquecidas chegaram à Associação. Investigue e elimine a ameaça.",
+    "historia": "Associação de Caçadores: 'Hunter, recebemos relatos de atividade anormal. Mortos-vivos estão saindo das Ruínas em grande número. Precisamos de alguém corajoso para investigar.'",
+    "objetivos": [
+      { "tipo": "matar",   "quantidade": 30, "descricao": "Derrote 30 monstros",    "campo": "total_kills"      },
+      { "tipo": "dungeon", "quantidade": 5,  "descricao": "Complete 5 dungeons",    "campo": "dungeons_cleared" }
+    ],
+    "recompensas": { "exp": 2000, "gold": 10000, "item": "espada_prata" },
+    "proxima_quest": "quest_004"
+  },
+  {
+    "id": "quest_004",
+    "titulo": "O Portão Vermelho",
+    "rank": "B",
+    "tipo": "historia",
+    "nivel_minimo": 30,
+    "descricao": "Um Portão Vermelho foi detectado no centro da cidade. Se não for resolvido em tempo, irá explodir causando uma catástrofe. Você é o único forte o suficiente.",
+    "historia": "Sistema: 'ALERTA CRÍTICO. Portão Vermelho detectado. Risco de explosão iminente. Missão especial ativada. Complete antes que seja tarde demais.'",
+    "objetivos": [
+      { "tipo": "matar",   "quantidade": 60, "descricao": "Derrote 60 monstros",   "campo": "total_kills"      },
+      { "tipo": "dungeon", "quantidade": 10, "descricao": "Complete 10 dungeons",  "campo": "dungeons_cleared" }
+    ],
+    "recompensas": { "exp": 5000, "gold": 25000, "item": "laminas_destino" },
+    "proxima_quest": "quest_005"
+  },
+  {
+    "id": "quest_005",
+    "titulo": "Sombras do Passado",
+    "rank": "A",
+    "tipo": "historia",
+    "nivel_minimo": 50,
+    "descricao": "O Sistema revelou uma verdade sombria: você foi escolhido como candidato a Monarca das Sombras. Para aceitar esse poder, você deve provar sua força de vontade.",
+    "historia": "Sistema: 'Hunter especial. Você demonstrou potencial para transcender os limites humanos. O poder das Sombras aguarda aquele que for digno. Prove sua supremacia.'",
+    "objetivos": [
+      { "tipo": "matar",   "quantidade": 150, "descricao": "Derrote 150 monstros",  "campo": "total_kills"      },
+      { "tipo": "dungeon", "quantidade": 25,  "descricao": "Complete 25 dungeons",  "campo": "dungeons_cleared" },
+      { "tipo": "pvp_win", "quantidade": 5,   "descricao": "Vença 5 duelos PvP",    "campo": "pvp_wins"         }
+    ],
+    "recompensas": { "exp": 15000, "gold": 80000, "item": "espada_monarca" },
+    "proxima_quest": null
+  },
+  {
+    "id": "quest_daily_1",
+    "titulo": "Caçada Diária",
+    "rank": "E",
+    "tipo": "diaria",
+    "nivel_minimo": 1,
+    "descricao": "Complete a caçada diária para receber recompensas do Sistema.",
+    "historia": "Sistema: 'Missão diária ativada. Mostre seu valor.'",
+    "objetivos": [
+      { "tipo": "dungeon", "quantidade": 3, "descricao": "Complete 3 dungeons hoje", "campo": "dungeons_hoje" }
+    ],
+    "recompensas": { "exp": 200, "gold": 1500, "item": null }
+  },
+  {
+    "id": "quest_daily_2",
+    "titulo": "Caçador Implacável",
+    "rank": "D",
+    "tipo": "diaria",
+    "nivel_minimo": 10,
+    "descricao": "Derrote monstros sem parar para demonstrar resistência.",
+    "historia": "Sistema: 'Um verdadeiro caçador nunca descansa.'",
+    "objetivos": [
+      { "tipo": "matar", "quantidade": 10, "descricao": "Derrote 10 monstros hoje", "campo": "kills_hoje" }
+    ],
+    "recompensas": { "exp": 500, "gold": 3000, "item": "mp_potion_grande" }
+  }
+]

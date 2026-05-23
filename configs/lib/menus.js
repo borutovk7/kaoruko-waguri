@@ -1,0 +1,1078 @@
+const fs = require('fs')
+const colors = require('colors') ;
+
+exports.menu = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return  `
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖   🪷𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄🪷 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: ${isCargo}
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷 𝐃𝐈𝐕𝐄𝐑𝐒𝐎𝐒-𝐌𝐄𝐍𝐔𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menudono
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menuadm
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menupremium
+᥀·࣭࣪̇˖🪷◗ ${prefix}Efeitosimg
+᥀·࣭࣪̇˖🪷◗ ${prefix}Brincadeiras
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menurpg 
+᥀·࣭࣪̇˖🪷◗ ${prefix}menudownload
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menusemprefixo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menuconsulta (off)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Menucasual
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐂𝐌𝐃𝐒 𝐃𝐄 𝐌𝐄𝐌𝐁𝐑𝐎🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}infobot (Informações)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Idiomas (Gtts)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Saldo (Saldo disponível)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bug (Questione/Erros) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Sugestao (Dica/Sugestão)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Avalie (O quanto é bom)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐈𝐀 🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bot (Título da pesquisa) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pergunta (Título da pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gpt (Título da pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gptvoz (Título pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Criar-img (Titulo da img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anny (Título da pesquisa) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Isabella (Título da pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}gemine (Título da pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}kyomi (Título pesquisa)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Criar-img (Titulo da img
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀𝐒/𝐁𝐀𝐈𝐗𝐀𝐑🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play2 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playmp4 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playdoc (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playmix (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play_audio (Nome/Url)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play_video (Nome/Url)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Audiomeme (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Shazam (Menc-audio)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_img (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Facebook (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Face_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Face_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Instagram (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Insta_video (Link) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Insta_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Spotify (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Soundcloud (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pinterest (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gimage (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mediafire (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mediafire2 (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Submarino (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nerding (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pensador (Nome))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nasa (Ex: 19-10-2007)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lyrics (Música) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playstore (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Signo (Signo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Amazon (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mlsrc (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Americanas (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Buscar_stk (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wikipedia (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Corretor (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gpt (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gptvoz (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Crimg (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Imgpralink (Marcar-img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Videopralink (Marcar-vid)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐂𝐌𝐃𝐒-𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐕𝐎𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ping (Velocidade/Up) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Atividade (do Grupo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankativo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Checkativo (@Marcar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranklevel (do Grupo) 
+᥀·࣭࣪̇˖🪷◗ .Debug (Apenas dono)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖    🪷𝐉𝐎𝐆𝐎𝐒/𝐐𝐔𝐈𝐙🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Resetforca
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jogodaforca
+᥀·࣭࣪̇˖🪷◗ ${prefix}verdadeodesafio (v/d)
+᥀·࣭࣪̇˖🪷◗ ${prefix}R-forca
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ppt (Pedra/Papel/Tesoura) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jogodavelha (@Marcar) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cassino
+᥀·࣭࣪̇˖🪷◗ ${prefix}Dado
+᥀·࣭࣪̇˖🪷◗ ${prefix}Caracoroa
+᥀·࣭࣪̇˖🪷◗ ${prefix}Apostar (Valor = 50)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pescar
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anagrama (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Steal (@Marcar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Churrasco
+᥀·࣭࣪̇˖🪷◗ ${prefix}Quizanimal (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Quando (Perguntar)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖    🪷𝐅𝐈𝐆𝐔𝐑𝐈𝐍𝐇𝐀𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp3 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp4 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp5 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp6 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp7 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp8 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp9 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Attp10 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ttp (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fsticker (Marcar-foto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Figurinhas (Quantidade)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Qc (Mensagem desejada)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Buscar_stk (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Figaleatoria
+᥀·࣭࣪̇˖🪷◗ ${prefix}Sticker (Marcar-foto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Toimg (Marcar-sticker)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Togif (Marcar-sticker)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Roubar (Texto/Texto)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖  🪷 𝐂𝐌𝐃𝐒-𝐀𝐋𝐄𝐀𝐓𝐎𝐑𝐈𝐎𝐒 🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gtts (Idioma + Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tagme 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Emoji (😏/Whatsapp)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Emojimix (Emoji+Emoji)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tabela (Letras/Simbolos) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Conselhobiblico
+᥀·࣭࣪̇˖🪷◗ ${prefix}Simi (Hable com ela)  
+᥀·࣭࣪̇˖🪷◗ ${prefix}Perfil
+᥀·࣭࣪̇˖🪷◗ ${prefix}Calcular (10 + 10)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fazernick (Oq deseja)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••`;
+};
+
+
+
+exports.adms = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖       𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐌𝐄𝐍𝐔 - 𝐀𝐃𝐌𝐈𝐍𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antiimg (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antivideo (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antiaudio (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antisticker (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antiloc (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anticontato (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antidoc (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antilinkgp (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antilinkhard (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antifake (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antinotas (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anticatalogo (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antipalavrao (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Limitecaracteres (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bemvindo (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bemvindo2 (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anny Ia (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Autodow (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Autosticker (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Autorepo (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Leveling (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Modonsfw (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Odelete (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}x9visuunica (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}x9 (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legenda_imagem (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legenda_video (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legenda_estrangeiro (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legendabv (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legendasaiu (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legendabv2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Legendasaiu2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}So_adm
+᥀·࣭࣪̇˖🪷◗ ${prefix}Listanegra (Número)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirardalista (Número)
+᥀·࣭࣪̇˖🪷◗ ${prefix}ListanegraG (Número)
+᥀·࣭࣪̇˖🪷◗ ${prefix}TirardalistaG (Número)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Multiprefixo (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Add_prefixo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirar_prefixo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Banghost
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mute (@mencionar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Desmute (@mencionar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Reviver (Responder-mensagem)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Kick [@] (Para-remover) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ban (Responder-mensagem)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Promover [@] (Ser-admin)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rebaixar [@] (Rebaixar-adm)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Changegroup (all/adms)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rmphotogp (Remover ft do gp)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ephemeral [1/0] (Msg-temp)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Descgp (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nomegp (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Totag (Mencionar algo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Grupo (f/a)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Status
+᥀·࣭࣪̇˖🪷◗ ${prefix}Limpar (texto-invisível-gp)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Atividades (DO-GRUPO)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Linkgp
+᥀·࣭࣪̇˖🪷◗ ${prefix}Grupoinfo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Hidetag (txt) (marcação)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Marcar (marca tds do gp)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Marcar2 (Marca-tds-wa.me)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anagrama (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antipalavra (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Criartabela (Escreva-algo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tabelagp (Veja a tabela)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.menudono = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `ㅤ
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖    𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖    COMANDOS NORMAL 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Setprefix
+᥀·࣭࣪̇˖🪷◗ ${prefix}gifping
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fotomenu
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fundobemvindo
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fundosaiu
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fundolevel
+᥀·࣭࣪̇˖🪷◗ ${prefix}Serpremium
+᥀·࣭࣪̇˖🪷◗ ${prefix}Listagp
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antipalavrão (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Antiligar (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fazertm (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rgtm
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirardatm
+᥀·࣭࣪̇˖🪷◗ ${prefix}Listatm
+᥀·࣭࣪̇˖🪷◗ ${prefix}Visualizarmsg
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fotoperfil 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nomeperfil 
+᥀·࣭࣪̇˖🪷◗ ${prefix}recadoperrfil
+᥀·࣭࣪̇˖🪷◗ ${prefix}Verificado-global (Selos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Audio-menu
+᥀·࣭࣪̇˖🪷◗ ${prefix}Addpalavra (palavrão)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Delpalavra (palavrão)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ausente (fale-oq-faz)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ativo
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐀𝐋𝐔𝐆𝐔𝐄𝐋🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Modoaluguel (1/0)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Addrent (@/dias)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirarrent (dias)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Delrent
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cortesia24
+᥀·࣭࣪̇˖🪷◗ ${prefix}Listrent
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lastrent
+᥀·࣭࣪̇˖🪷◗ ${prefix}Codelistrent
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gerarcoderent (@/dias)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Delcoderent (código)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gerarcodecort
+᥀·࣭࣪̇˖🪷◗${prefix}gerarkeygp
+᥀·࣭࣪̇˖🪷◗${prefix}gerarkeyvip
+᥀·࣭࣪̇˖🪷◗${prefix}gerarkeyvipgp
+᥀·࣭࣪̇˖🪷◗${prefix}gerarkeycard
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐏𝐑𝐄𝐌𝐈𝐔𝐌-𝐔𝐒𝐔/𝐂𝐌𝐃🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}addvip [@/dias]
+᥀·࣭࣪̇˖🪷◗ ${prefix}delvip [@/dias]
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cmdpremiumlist
+᥀·࣭࣪̇˖🪷◗ ${prefix}premiumlist
+᥀·࣭࣪̇˖🪷◗ ${prefix}Addcmdpremium (cmd)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Delcmdpremium (cmd) 
+᥀·࣭࣪̇˖🪷◗${prefix}addvipgp
+᥀·࣭࣪̇˖🪷◗${prefix}delvipgp
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖   🪷𝐏𝐑𝐈𝐕𝐀𝐂𝐈𝐃𝐀𝐃𝐄 🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wprivacyph
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wprivacygp
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐁𝐋𝐎𝐂𝐊/𝐔𝐍𝐁𝐋𝐎𝐂𝐊🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blockcmdg (comando)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Unblockcmdg (comando)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Listbcmdglobal
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blockuser [@]
+᥀·࣭࣪̇˖🪷◗ ${prefix}Unblockuser [@]
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bangp
+᥀·࣭࣪̇˖🪷◗ ${prefix}Unbangp
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐋𝐄𝐕𝐄𝐋𝐈𝐍𝐆🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Addlevel (quantidade)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirarlevel (quantidade)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Addxp (quantidade)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tirarxp (quantidade)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blocklevellist
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blocklevel (@marcar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Unblocklevel (@marcar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rmlevel (@marcar)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.menulogos = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `ㅤ​╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖       𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐌𝐄𝐍𝐔 - 𝐋𝐎𝐆𝐎𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷𝐋𝐎𝐆𝐎𝐒 - 𝐕𝐈𝐃𝐄𝐎🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pubgv (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Natalmsg (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anonovo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Trigrev (Texto)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷𝐋𝐎𝐆𝐎𝐒 𝟐 𝐓𝐄𝐗𝐓𝐎𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}imdefinido (Texto/Texto)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷𝐋𝐎𝐆𝐎𝐒 𝟏 𝐓𝐄𝐗𝐓𝐎🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Glue (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Dark (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Galaxystyle (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Minion (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Horrorgift (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Holographic (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Deluxe (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Glossyblue (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Deluxegold (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Glossycarbon (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fabric (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Watercolor (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}1917 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Multicolor (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Generator (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wonderful (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Holiday (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Technology (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Winter (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neontext (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Halloweenfire (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Metaldark (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Darkgold (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wicker (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Firework (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Steeltext (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Goldfoil (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ultragloss (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Denimtext (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Stargreen (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Captain (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Toxic (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ninjalogo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Txtquadrinhos (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}HackNeon (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}EquipeMascote (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}FFavatar (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gizquadro (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Angelglx (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}WingEffect (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Angelwing (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blackpink (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Girlmascote (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mascotegame (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fpsmascote (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Logogame (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Glitch2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}3DGold (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Placaloli (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Phadow (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Efeitoneon (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cemiterio (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Metalgold (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Narutologo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fire (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Romantic (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Smoke (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Papel (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lovemsg (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lovemsg2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lovemsg3 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Coffecup (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Coffecup2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cup (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Florwooden (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lobometal (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Harryp (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Txtborboleta (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Madeira (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pornhub (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Escudo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Transformer (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}America (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Demongreen (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wetglass (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Toxic (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon3 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neondevil (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neongreen (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lava (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Halloween (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neondevil (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}DemonFire (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}DemonGreen (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Thunderv2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Thunder (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Colaq (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Luxury (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Berry (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Transformer (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Matrix (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Horror (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nuvem (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon1 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon2 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon3d (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}NeonGreen (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neon3 (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Neve (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Areia (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Vidro (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Style (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pink (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Carbon (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tetalblue (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jeans (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ossos (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Asfalto (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}3dgoldenblack (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}3d_business (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Summer (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Natal (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jokerlogo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blood (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Break (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Fiction (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}3dstone (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lapis (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gelo (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rainbow (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Metalfire (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Cria (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anime1 (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Anime2 (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ff1 (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ff2 (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Game (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Entardecer (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Indian (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ffrose (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ffgren (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Chufuyu (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wolf (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Dragonred (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}
+᥀·࣭࣪̇˖🪷◗ ${prefix}bots (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}cubie (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}fbomb (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}big (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}hello (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}mushroom_green (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}hands (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}japan (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}recycle (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}retropixel (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}spaces (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}rugs (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}tribe (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}fx (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}silver (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}straypixels (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}scifi (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}marketplace (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}ribbon (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}lido (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}steampunk (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}battlebanzai (Texto) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}flame (Texto)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••`
+};
+
+
+
+exports.alteradores = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖       𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷𝐀𝐋𝐓𝐄𝐑𝐀𝐑-𝐕𝐈𝐃𝐄𝐎🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Videolento (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Videorapido (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Videocontrario (marca)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖  🪷𝐀𝐋𝐓𝐄𝐑𝐀𝐑-𝐀𝐔𝐃𝐈𝐎🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Audiolento (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Audiorapido (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Grave (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Grave2 (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Esquilo (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Estourar (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bass (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bass2 (marca)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Vozmenino (marca)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.menupremium = (isCmdpremium, prefix, capitalizeFirstLetter) => { 
+return `ㅤ╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐂❍̸𝐌𝚫𝚴𝐃❍̸𝐒 𝐕𝐈𝐏🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+${isCmdpremium.map((cmd, index) => `᥀·࣭࣪̇˖🪷◗ ${prefix + capitalizeFirstLetter(cmd)}`).join('\n')}
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+exports.menudow = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀𝐒/𝐁𝐀𝐈𝐗𝐀𝐑🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play2 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play3 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play4 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play5 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playpremium (pv/titulo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playmp4 (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playdoc (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playmix (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play_audio (Nome/Url)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Play_video (Nome/Url)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Audiomeme (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Shazam (Menc-audio)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tiktok_img (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Facebook (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Face_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Face_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Twitter_video (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Instagram (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Insta_video (Link) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Insta_audio (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Spotify (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Soundcloud (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pinterest (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gimage (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mediafire (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mediafire2 (Link)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Submarino (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nerding (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pensador (Nome))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Nasa (Ex: 19-10-2007)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lyrics (Música) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Playstore (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Signo (Signo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Amazon (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mlsrc (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Americanas (Nome)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Buscar_stk (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wikipedia (Nome) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Corretor (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gpt (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gptvoz (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Crimg (Texto)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Imgpralink (Marcar-img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Videopralink (Marcar-vid)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••`};
+
+
+
+
+
+
+exports.brincadeiras = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷𝐌𝐄𝐍𝐔-𝐁𝐑𝐈𝐍𝐂𝐀𝐃𝐄𝐈𝐑𝐀𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐉𝐎𝐆𝐔𝐈𝐍𝐇𝐎𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jogodavelha (@Marcar) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Vab (Você prefere hm?)
+᥀·࣭࣪̇˖🪷◗ ${prefix}vdd (verdade ou desafio)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Eununca (Eu nunca, eu já?)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ppt (Pedra/Papel/Tesoura) 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐈𝐍𝐓𝐄𝐑𝐀𝐓𝐈𝐕𝐎𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gay (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Feio (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Corno (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Vesgo (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bebado (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gostoso (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Gostosa (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Sigma (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Beta (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Baiano (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Baiana (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Carioca (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Louco (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Louca (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Safada (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Safado (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Macaco (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Macaca (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Puta (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Beijo (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Matar (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Tapa (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Chute (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Dogolpe (marca (@))   
+${prefix}Nazista (marca (@))
+᥀·࣭࣪̇˖🪷◗ ${prefix}Chance (fale algo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}comer  (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}comer2 (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}comer3 (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}comer4 (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}dar (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}goza (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}mama (marca (@))   
+᥀·࣭࣪̇˖🪷◗ ${prefix}Surubao (Quantidade) 
+᥀·࣭࣪̇˖🪷◗ ${prefix}Casal (Casal do grupo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Quando (Perguntar)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Mencionar (fale algo)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Death (Nome)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐓𝐎𝐏 𝟓 - 𝐑𝐀𝐍𝐊🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankgay (5 gays)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankgado (5 gados)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankcorno (5 cornos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankgostoso (5 gostosos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankgostosa (5 gostosas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranknazista (5 nazistas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankotakus (5 otakus)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankpau (5 pauzudos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranksigma (5 sigmas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankbeta (5 betas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankbaiano (5 baianos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankbaiana (5 baianas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankcarioca (5 cariocas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranksafado (5 safados)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranksafada (5 safadas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranklouco (5 loucos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Ranklouca (5 loucas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankmacaco (5 macacos)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankmacaca (5 macacas)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rankputa (5 putas)
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.efeitos = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `ㅤ°ೋ•🪷══╗ 
+᥀·࣭࣪̇˖       𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 
+
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷 𝐌𝐄𝐍𝐔-𝐃𝐄-𝐄𝐅𝐄𝐈𝐓𝐎𝐒 🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Comunismo (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bolsonaro (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Bnw (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Beautiful (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Blur (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Affect (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Del (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Circle (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Beautiful (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Dither (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Facepalm (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Invert (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Lgbt (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Magik (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rotate (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Rip (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Jail (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Trash (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Pixelate (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Sepia (marcar)-(img)
+᥀·࣭࣪̇˖🪷◗ ${prefix}Wanted (marcar)-(img) 
+᥀·࣭࣪̇˖🪷◗${prefix}Wasted (marcar)-(img) 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.consultas = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖  🪷 𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 🪷 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷𝐂𝐎𝐍𝐒𝐔𝐋𝐓𝐀𝐒 - 𝐕𝐈𝐏𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ EM BREVE!
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+exports.menujogos = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+  return `╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖  🪷 𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑 🪷 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷 𝐌𝐄𝐍𝐔 𝐉𝐎𝐆𝐎𝐒 🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🎴 *『 U N O — AJUDA 』*
+᥀·࣭࣪̇˖🟢 *CRIAR PARTIDA*
+᥀·࣭࣪̇˖🪷◗ *${prefix}criaruno* — criar partida no grupo
+᥀·࣭࣪̇˖🤝 *ENTRAR/CONFIGURAR*
+᥀·࣭࣪̇˖🪷◗ *${prefix}unoentrar* — entrar na sala
+᥀·࣭࣪̇˖🪷◗ *${prefix}addbot* — adicionar bot (IA)
+᥀·࣭࣪̇˖🪷◗ *${prefix}iniciaruno* — iniciar (host)
+᥀·࣭࣪̇˖🃏 *DURANTE O JOGO*
+᥀·࣭࣪̇˖🪷◗ *${prefix}jogar [1-9]* — jogar carta
+᥀·࣭࣪̇˖🪷◗ *${prefix}jogar [n] [cor]* — Wild (ex: jogar 5 Vermelho)
+᥀·࣭࣪̇˖🪷◗ *${prefix}compraruno* — comprar carta
+᥀·࣭࣪̇˖🪷◗ *${prefix}uno* — chamar UNO (1 carta)!
+᥀·࣭࣪̇˖🪷◗ *${prefix}minhascartas* — ver mão no PV
+᥀·࣭࣪̇˖🪷◗ *${prefix}estadouno* — estado atual
+᥀·࣭࣪̇˖📊 *RANKINGS*
+᥀·࣭࣪̇˖🪷◗ *${prefix}rankuno* — ranking global
+᥀·࣭࣪̇˖🪷◗ *${prefix}perfiluno* — seu perfil
+᥀·࣭࣪̇˖🛑 *ENCERRAR*
+᥀·࣭࣪̇˖🪷◗ *${prefix}sairuno* — encerrar (host)
+᥀·࣭࣪̇˖🎨 *Cores válidas para Wild:*
+᥀·࣭࣪̇˖🪷◗ Vermelho | Azul | Verde | Amarelo
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🎲 *『 VERDADE OU DESAFIO 』*
+᥀·࣭࣪̇˖🟢 *LOBBY*
+᥀·࣭࣪̇˖🪷◗ *${prefix}vdd* — abrir lobby
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddentra* — entrar no lobby
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddinicia* — iniciar partida (host)
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddinfo* — ver status da partida
+᥀·࣭࣪̇˖🎯 *DURANTE O JOGO*
+᥀·࣭࣪̇˖🪷◗ *${prefix}verdade* — receber uma verdade
+᥀·࣭࣪̇˖🪷◗ *${prefix}desafio* — receber um desafio
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddfiz* — confirmar que cumpriu
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddsair* — sair da partida
+᥀·࣭࣪̇˖🛑 *ENCERRAR*
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddencerrar* — encerrar (adm/dono)
+᥀·࣭࣪̇˖🔧 *ADMIN — GERENCIAR PERGUNTAS*
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddadd verdade [texto]* — adicionar verdade
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddadd desafio [texto]* — adicionar desafio
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddrm verdade [nº]* — remover verdade
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddrm desafio [nº]* — remover desafio
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddlista verdade* — listar verdades
+᥀·࣭࣪̇˖🪷◗ *${prefix}vddlista desafio* — listar desafios
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯`;
+};
+exports.menu18 = (prefix, NomeDoBot, isCargo, versão, ownerName) => {
+return `
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖ 🪷 𝐈𝐍𝐅𝐎-𝐁𝐎𝐓/𝐔𝐒𝐄𝐑🪷 
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ Bot: *${NomeDoBot}*
+᥀·࣭࣪̇˖🪷◗ Cargo: *${isCargo}*
+᥀·࣭࣪̇˖🪷◗ Minha Versão: *${versão}*
+᥀·࣭࣪̇˖🪷◗ Dono: *${ownerName}*
+᥀·࣭࣪̇˖🪷◗ Prefixo: *${prefix}*
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖      🪷𝐌𝐄𝚴𝐔 +𝟏𝟖🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}amador 
+᥀·࣭࣪̇˖🪷◗ ${prefix}onlyfans
+᥀·࣭࣪̇˖🪷◗ ${prefix}porno
+᥀·࣭࣪̇˖🪷◗ ${prefix}egirlvideo
+᥀·࣭࣪̇˖🪷◗ ${prefix}aline
+᥀·࣭࣪̇˖🪷◗ ${prefix}alifox
+᥀·࣭࣪̇˖🪷◗ ${prefix}alycia
+᥀·࣭࣪̇˖🪷◗ ${prefix}amichan
+᥀·࣭࣪̇˖🪷◗ ${prefix}aninha
+᥀·࣭࣪̇˖🪷◗ ${prefix}victoria
+᥀·࣭࣪̇˖🪷◗ ${prefix}belle
+᥀·࣭࣪̇˖🪷◗ ${prefix}brenda
+᥀·࣭࣪̇˖🪷◗ ${prefix}cami
+᥀·࣭࣪̇˖🪷◗ ${prefix}clowniac
+᥀·࣭࣪̇˖🪷◗ ${prefix}feh
+᥀·࣭࣪̇˖🪷◗ ${prefix}giovanna
+᥀·࣭࣪̇˖🪷◗ ${prefix}isadora
+᥀·࣭࣪̇˖🪷◗ ${prefix}isa
+᥀·࣭࣪̇˖🪷◗ ${prefix}lay
+᥀·࣭࣪̇˖🪷◗ ${prefix}leticia
+᥀·࣭࣪̇˖🪷◗ ${prefix}marina
+᥀·࣭࣪̇˖🪷◗ ${prefix}maru
+᥀·࣭࣪̇˖🪷◗ ${prefix}princesa
+᥀·࣭࣪̇˖🪷◗ ${prefix}meladinha
+᥀·࣭࣪̇˖🪷◗ ${prefix}nath
+᥀·࣭࣪̇˖🪷◗ ${prefix}nega
+᥀·࣭࣪̇˖🪷◗ ${prefix}polonesa
+᥀·࣭࣪̇˖🪷◗ ${prefix}rute
+᥀·࣭࣪̇˖🪷◗ ${prefix}celestine
+᥀·࣭࣪̇˖🪷◗ ${prefix}carnie
+᥀·࣭࣪̇˖🪷◗ ${prefix}gotica
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+    🪷𝐏𝐋𝐀𝐐𝐔𝐈𝐍𝐇𝐀𝐒🪷
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq1 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq2 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq3 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq4 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq5 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq6 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq7 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq8 ( TXT )
+᥀·࣭࣪̇˖🪷◗ ${prefix}Plaq9 ( TXT )
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+`;
+};
+
+const semprefix = (sender, prefix) => {
+return `『𝐌𝐄𝐍𝐔 𝐒𝐄𝐌 𝐏𝐑𝐄𝐅𝐈𝐗𝐎』
+  ➥ 𝐁𝐄𝐌 𝐕𝐈𝐍𝐃𝐎 (𝐀) 
+⇒ @${sender.split("@")[0]}
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮        
+᥀·࣭࣪̇˖ 𝐌𝐄𝐍𝐔 ✰ 𝐒𝐄𝐌 𝐏𝐑𝐄𝐅𝐈𝐗𝐎       
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••
+╭┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╮
+᥀·࣭࣪̇˖.☽ﾟ🇧🇷(rouba fig) 
+᥀·࣭࣪̇˖.☽ﾟclima
+᥀·࣭࣪̇˖.☽ﾟaceita (solicitação) 
+᥀·࣭࣪̇˖.☽ﾟrecusa (solicitação) 
+᥀·࣭࣪̇˖.☽ﾟprmv(adm) 
+᥀·࣭࣪̇˖.☽ﾟrbx(adm) 
+᥀·࣭࣪̇˖.☽ﾟban(adm) 
+᥀·࣭࣪̇˖.☽ﾟamaterasu
+╰┈ׅׄ┉-ׅ━━━━━ׁ━፝֟━̷━ׁ۫━━━━━┈ׅׄ┉ׅ-╯
+••`
+}
+
+exports.semprefix = semprefix
+
+
+
+
+
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+    fs.unwatchFile(file)
+    console.log(colors.blue(`Modificação detectada: '.${__filename}' - Arquivo Atualizado os Menu.`))
+    delete require.cache[file]
+    require(file)
+})

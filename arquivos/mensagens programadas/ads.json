@@ -1,0 +1,68 @@
+[
+  {
+    "groupId": "120363402984977517@g.us",
+    "acctive": true,
+    "horarios": []
+  },
+  {
+    "groupId": "120363193525588420@g.us",
+    "acctive": true,
+    "horarios": []
+  },
+  {
+    "groupId": "120363423218687879@g.us",
+    "acctive": true,
+    "horarios": []
+  },
+  {
+    "groupId": "120363421691569946@g.us",
+    "acctive": false,
+    "horarios": [
+      {
+        "id": "090226042314641",
+        "start": true,
+        "mentions": false,
+        "text": "sla eu gozei",
+        "adm": [],
+        "tempo": {
+          "horario": "04:23",
+          "type": "m",
+          "valor": 1,
+          "dias": 0,
+          "save": "09"
+        },
+        "imagem": [
+          "https://cloud.trindadehost.com/files/images/1770621794417-751c6439c1d4.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "groupId": "120363406854093282@g.us",
+    "acctive": true,
+    "horarios": []
+  },
+  {
+    "groupId": "120363407533555680@g.us",
+    "acctive": false,
+    "horarios": [
+      {
+        "id": "310326013939103",
+        "start": true,
+        "mentions": false,
+        "text": "sla teste 2",
+        "adm": [
+          "559774004582@s.whatsapp.net"
+        ],
+        "tempo": {
+          "horario": "01:50",
+          "type": "m",
+          "valor": 2,
+          "dias": 0,
+          "save": "31"
+        },
+        "imagem": []
+      }
+    ]
+  }
+]

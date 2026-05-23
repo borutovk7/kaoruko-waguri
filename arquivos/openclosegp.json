@@ -1,0 +1,42 @@
+[
+  {
+    "groupId": "120363419816426737@g.us",
+    "horarios": []
+  },
+  {
+    "groupId": "120363390007739188@g.us",
+    "horarios": []
+  },
+  {
+    "groupId": "120363420815852849@g.us",
+    "horarios": [
+      {
+        "id": "200525005534",
+        "func": "open",
+        "hora": "00:56",
+        "dias": 0,
+        "save": "20",
+        "cobrado": true,
+        "adm": "559784279770@s.whatsapp.net"
+      }
+    ]
+  },
+  {
+    "groupId": "120363424576956349@g.us",
+    "horarios": [
+      {
+        "id": "230226001712",
+        "func": "close",
+        "hora": "00:00",
+        "dias": 0,
+        "save": "24",
+        "cobrado": true,
+        "adm": "559774004582@s.whatsapp.net"
+      }
+    ]
+  },
+  {
+    "groupId": "120363407200014758@g.us",
+    "horarios": []
+  }
+]

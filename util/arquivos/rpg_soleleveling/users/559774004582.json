@@ -1,0 +1,168 @@
+{
+  "id": "559774004582",
+  "nome": "Sung Jin-Woo",
+  "rank": "D (Oculto S)",
+  "job": "Monarca das Sombras",
+  "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+  "level": 5,
+  "exp": 999993888,
+  "exp_next": 999999999,
+  "stats": {
+    "forca": 10046,
+    "agilidade": 10049,
+    "inteligencia": 1099,
+    "percepcao": 1049,
+    "vitalidade": 1049
+  },
+  "hp": 19998,
+  "hp_max": 99999,
+  "mp": 1009998,
+  "mp_max": 9999999,
+  "equipamento": {
+    "cabeca": null,
+    "peito": "Armadura de Ferro",
+    "pernas": null,
+    "arma": "Cajado Arcano",
+    "acessorio": "Anel do Monarca"
+  },
+  "skills": [
+    "Ataque Básico",
+    "Esquiva",
+    "Punhal das Sombras"
+  ],
+  "shadows": [
+    {
+      "nome": "Sombra de Cobra do Pântano",
+      "rank": "Elite",
+      "extraida_em": "20/04/2026",
+      "stats": {
+        "forca": 99999,
+        "agilidade": 9999
+      }
+    },
+    {
+      "nome": "Sombra de Crocodilo Mutante",
+      "rank": "Cavaleiro",
+      "extraida_em": "20/04/2026",
+      "stats": {
+        "forca": 12,
+        "agilidade": 10
+      }
+    },
+    {
+      "nome": "Sombra de Cavaleiro Morto-Vivo",
+      "rank": "Soldado",
+      "extraida_em": "06/05/2026",
+      "stats": {
+        "forca": 6558,
+        "agilidade": 5246
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "id": "espada_ferro",
+      "nome": "Espada de Ferro",
+      "tipo": "Arma",
+      "rank": "D",
+      "preco": 5000,
+      "preco_venda": 2000,
+      "slot": "arma",
+      "efeito": "Ataque +25",
+      "stats": {
+        "ataque": 999,
+        "forca": 9999
+      },
+      "descricao": "Espada forjada em ferro de alta qualidade.",
+      "emoji": "⚔️",
+      "qtd": 1
+    },
+    {
+      "id": "armadura_ferro",
+      "nome": "Armadura de Ferro",
+      "tipo": "Armadura",
+      "rank": "D",
+      "preco": 4000,
+      "preco_venda": 1600,
+      "slot": "peito",
+      "efeito": "Defesa +20",
+      "stats": {
+        "defesa": 20,
+        "vitalidade": 3
+      },
+      "descricao": "Armadura sólida forjada em ferro.",
+      "emoji": "🛡️",
+      "qtd": 1
+    },
+    {
+      "id": "botas_sombra",
+      "nome": "Botas das Sombras",
+      "tipo": "Armadura",
+      "rank": "S",
+      "preco": 120000,
+      "preco_venda": 50000,
+      "slot": "pernas",
+      "efeito": "Agilidade +80",
+      "stats": {
+        "agilidade": 80,
+        "percepcao": 20
+      },
+      "descricao": "Botas da essência das sombras. Movimento silencioso.",
+      "emoji": "👟",
+      "qtd": 1
+    },
+    {
+      "id": "cajado_arcano",
+      "nome": "Cajado Arcano",
+      "tipo": "Arma",
+      "rank": "B",
+      "preco": 45000,
+      "preco_venda": 18000,
+      "slot": "arma",
+      "efeito": "Int +50, Ataque +80",
+      "stats": {
+        "ataque": 80,
+        "inteligencia": 50
+      },
+      "descricao": "Cajado imbuído com energia arcana.",
+      "emoji": "🔮",
+      "qtd": 1
+    },
+    {
+      "id": "anel_monarca",
+      "nome": "Anel do Monarca",
+      "tipo": "Acessório",
+      "rank": "S",
+      "preco": 150000,
+      "preco_venda": 60000,
+      "slot": "acessorio",
+      "efeito": "Todos os stats +50",
+      "stats": {
+        "forca": 50,
+        "agilidade": 50,
+        "inteligencia": 50,
+        "percepcao": 50,
+        "vitalidade": 50
+      },
+      "descricao": "O anel lendário do Monarca das Sombras.",
+      "emoji": "💍",
+      "qtd": 1
+    }
+  ],
+  "gold": 9999689999,
+  "guilda": null,
+  "daily": {
+    "flexoes": 0,
+    "abdominais": 0,
+    "agachamentos": 0,
+    "corrida": 0,
+    "date": "Thu May 14 2026",
+    "completed": false
+  },
+  "history": [],
+  "pvp_wins": 0,
+  "pvp_losses": 0,
+  "total_kills": 35,
+  "dungeons_cleared": 35,
+  "hunter_id": "sung_jin_woo"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "102025",
+    "temporada": 1,
+    "mes": "11",
+    "final": 1,
+    "usuarios": []
+  },
+  {
+    "id": "122025",
+    "temporada": 2,
+    "mes": "02",
+    "final": 1,
+    "usuarios": []
+  },
+  {
+    "id": "032026",
+    "temporada": 3,
+    "mes": "04",
+    "final": 1,
+    "usuarios": []
+  },
+  {
+    "id": "052026",
+    "temporada": 4,
+    "mes": "05",
+    "final": 2,
+    "usuarios": []
+  }
+]

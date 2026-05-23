@@ -1,0 +1,408 @@
+[
+  {
+    "id": "556199599663@s.whatsapp.net",
+    "saldo": 99826.90000000002,
+    "UID": 273859060160,
+    "rg": "09-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": [
+      {
+        "key": "B360-384349161681B720B-160238B",
+        "tipo": 1,
+        "tempo": 360,
+        "valor": 15,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "A360-384349161681A720A-160250A",
+        "tipo": 1,
+        "tempo": 360,
+        "valor": 15,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "T30-384349161681T60T-160341T",
+        "tipo": 4,
+        "tempo": 30,
+        "valor": 54.900000000000006,
+        "mod": true,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "H30-384349161681H60H-160353H",
+        "tipo": 4,
+        "tempo": 30,
+        "valor": 54.900000000000006,
+        "mod": true,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Q30-384349161681Q60Q-160363Q",
+        "tipo": 4,
+        "tempo": 30,
+        "valor": 54.900000000000006,
+        "mod": true,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "R30-384349161681R60R-160467R",
+        "tipo": 4,
+        "tempo": 30,
+        "valor": 39.900000000000006,
+        "mod": false,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "U168-384349161681U336U-345727U",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "O168-384349161681O336O-345735O",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Z168-22528690101Z336Z-376033Z",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "L168-22528690101L336L-372438L",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "P168-384349161681P336P-372471P",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "D168-384349161681D336D-372480D",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "P168-384349161681P336P-372536P",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "C168-384349161681C336C-372976C",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Q168-384349161681Q336Q-391968Q",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "I168-22528690101I336I-382229I",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Q168-22528690101Q336Q-382255Q",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Y168-22528070142Y336Y-245265Y",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "H168-384349161681H336H-245574H",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "H168-22529310060H336H-425050H",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "L168-384349161681L336L-412572L",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Z168-384349161681Z336Z-285360Z",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "K168-384349161681K336K-285369K",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "I168-384349161681I336I-285429I",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "D48-384349161681D96D-285460D",
+        "tipo": 5,
+        "tempo": 48,
+        "velocidade": 3,
+        "valor": 13.5,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Y168-384349161681Y336Y-285749Y",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "Y168-384349161681Y336Y-285768Y",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "A168-384349161681A336A-285974A",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "H2880-384349161681H5760H-271028H",
+        "tipo": 1,
+        "tempo": 2880,
+        "valor": 60,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "D168-384349161681D336D-271058D",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "M168-384349161681M336M-271069M",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "F168-384349161681F336F-271076F",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      },
+      {
+        "key": "F168-384349161681F336F-271131F",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "556199599663@s.whatsapp.net"
+      }
+    ]
+  },
+  {
+    "id": "5513981829148@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 271036840937,
+    "rg": "09-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "554199046919@s.whatsapp.net",
+    "saldo": 100000966,
+    "UID": 151820078789,
+    "rg": "14-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "555186211048@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 132211465380,
+    "rg": "14-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "559886265419@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 252201210170,
+    "rg": "14-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "556499887185@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 375530546805,
+    "rg": "16-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "5527997354156@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 250119428182,
+    "rg": "17-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "554898118077@s.whatsapp.net",
+    "saldo": 1e+96,
+    "UID": 329701990680,
+    "rg": "22-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "5548998118077@s.whatsapp.net",
+    "saldo": 9e+186,
+    "UID": 339942022794,
+    "rg": "22-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "5521983016115@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 286088129496,
+    "rg": "26-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "5521973670418@s.whatsapp.net",
+    "saldo": 9929,
+    "UID": 341603356470,
+    "rg": "26-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": [
+      {
+        "key": "G168-48283909696G336G-291079G",
+        "tipo": 5,
+        "tempo": 168,
+        "velocidade": 3,
+        "valor": 32,
+        "cliente": "5521973670418@s.whatsapp.net"
+      }
+    ]
+  },
+  {
+    "id": "5511959198961@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 451560683262,
+    "rg": "26-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "557798775932@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 406903369014,
+    "rg": "27-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "554399286953@s.whatsapp.net",
+    "saldo": 9967,
+    "UID": 427480740819,
+    "rg": "28-02-2025",
+    "cortesia": 2,
+    "mm": "02",
+    "keys": []
+  },
+  {
+    "id": "558694495575@s.whatsapp.net",
+    "saldo": 0,
+    "UID": 261057048120,
+    "rg": "09-03-2025",
+    "cortesia": 1,
+    "mm": "03",
+    "keys": []
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "prefix": "!",
+  "NomeDoBot": "🪐 𝑲𝒂𝒐𝒓𝒖𝒌𝒐 𝑾𝒂𝒈𝒖𝒓𝒊 🩵",
+  "ownerName": "Eduh Dev </>",
+  "ownerNumber": "550000000000",
+  "instagramCriador": "@paulo_mod_domina",
+  "criador": "Eduh Dev </>",
+  "Message": {
+    "Aviso": "⚠️ Não mexa aqui se não souber o que está fazendo!",
+    "ComoEditar": "Para trocar nome, prefixo, número do dono ou qualquer outra informação, basta alterar os valores deste JSON. Exemplo: mude o valor de 'NomeDoBot' para o nome que quiser.",
+    "ExemploAlteracao": {
+      "prefix": "!",
+      "NomeDoBot": "SeuNovoBot",
+      "ownerName": "NomeDoDono",
+      "ownerNumber": "550000000000"
+    }
+  },
+  "numerodono": "556182148430",
+  "instaCriador": "@paulo_mod_domina"
+}

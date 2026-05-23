@@ -1,0 +1,255 @@
+[
+  {
+    "id": "sung_jin_woo",
+    "nome": "Sung Jin-Woo",
+    "rank": "D (Oculto S)",
+    "classe": "Monarca das Sombras",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": false,
+    "stats": {
+      "forca": 10,
+      "agilidade": 10,
+      "inteligencia": 10,
+      "percepcao": 10,
+      "vitalidade": 10
+    },
+    "skills": [
+      "Ataque Básico",
+      "Esquiva",
+      "Punhal das Sombras"
+    ],
+    "descricao": "O Caçador mais fraco que, através do Sistema, se tornou o mais poderoso. Possui o poder único de extrair sombras dos inimigos derrotados.",
+    "owner": "559774004582"
+  },
+  {
+    "id": "cha_hae_in",
+    "nome": "Cha Hae-In",
+    "rank": "S",
+    "classe": "Espadachim",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 95,
+      "agilidade": 120,
+      "inteligencia": 70,
+      "percepcao": 100,
+      "vitalidade": 80
+    },
+    "skills": [
+      "Dança das Flores de Cerejeira",
+      "Fluxo Celestial",
+      "Esquiva"
+    ],
+    "descricao": "Vice-líder da Guilda Hunters. Uma das hunters S rank mais fortes da Coreia, famosa pela velocidade e precisão de sua espada."
+  },
+  {
+    "id": "go_gun_hee",
+    "nome": "Go Gun-Hee",
+    "rank": "S",
+    "classe": "Mago de Combate",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 80,
+      "agilidade": 70,
+      "inteligencia": 130,
+      "percepcao": 110,
+      "vitalidade": 75
+    },
+    "skills": [
+      "Punho de Trovão",
+      "Barreira Mágica",
+      "Domínio das Sombras"
+    ],
+    "descricao": "Presidente da Associação de Caçadores da Coreia. Um dos hunters mais respeitados e poderosos, conhecido por sua sabedoria e força."
+  },
+  {
+    "id": "choi_jong_in",
+    "nome": "Choi Jong-In",
+    "rank": "S",
+    "classe": "Mago do Fogo",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 60,
+      "agilidade": 75,
+      "inteligencia": 140,
+      "percepcao": 90,
+      "vitalidade": 65
+    },
+    "skills": [
+      "Explosão Flamejante",
+      "Chuva de Meteoros",
+      "Barreira Mágica"
+    ],
+    "descricao": "Líder da Guilda Vulcão. O mago de fogo mais poderoso da Coreia, com a capacidade de cobrir campos inteiros em chamas."
+  },
+  {
+    "id": "baek_yoon_ho",
+    "nome": "Baek Yoon-Ho",
+    "rank": "S",
+    "classe": "Transformador",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 130,
+      "agilidade": 110,
+      "inteligencia": 60,
+      "percepcao": 95,
+      "vitalidade": 120
+    },
+    "skills": [
+      "Forma do Tigre Branco",
+      "Golpe Trovão",
+      "Ataque Básico"
+    ],
+    "descricao": "Líder da Guilda White Tiger. Possui o poder de se transformar num tigre branco colossal."
+  },
+  {
+    "id": "thomas_andre",
+    "nome": "Thomas Andre",
+    "rank": "S",
+    "classe": "Colosso",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 150,
+      "agilidade": 50,
+      "inteligencia": 55,
+      "percepcao": 80,
+      "vitalidade": 200
+    },
+    "skills": [
+      "Terremoto",
+      "Barreira Mágica",
+      "Golpe Trovão"
+    ],
+    "descricao": "O hunter Nacional mais forte dos EUA. Sua força bruta é incomparável."
+  },
+  {
+    "id": "liu_zhigang",
+    "nome": "Liu Zhigang",
+    "rank": "S",
+    "classe": "Arqueiro de Espelhos",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 80,
+      "agilidade": 130,
+      "inteligencia": 100,
+      "percepcao": 150,
+      "vitalidade": 70
+    },
+    "skills": [
+      "Fluxo Celestial",
+      "Golpe Assassino",
+      "Esquiva"
+    ],
+    "descricao": "O hunter Nacional mais forte da China. Mestre na arte das ilusões e espelhos mágicos."
+  },
+  {
+    "id": "sung_il_hwan",
+    "nome": "Sung Il-Hwan",
+    "rank": "S",
+    "classe": "Guerreiro do Portão",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 140,
+      "agilidade": 100,
+      "inteligencia": 80,
+      "percepcao": 110,
+      "vitalidade": 130
+    },
+    "skills": [
+      "Golpe Trovão",
+      "Barreira Mágica",
+      "Terremoto"
+    ],
+    "descricao": "Pai de Sung Jin-Woo. Retornou de outro mundo com poder imensurável."
+  },
+  {
+    "id": "min_byung_gyu",
+    "nome": "Min Byung-Gyu",
+    "rank": "S",
+    "classe": "Curandeiro Sagrado",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 40,
+      "agilidade": 60,
+      "inteligencia": 120,
+      "percepcao": 90,
+      "vitalidade": 150
+    },
+    "skills": [
+      "Cura Rápida",
+      "Barreira Mágica",
+      "Ataque Básico"
+    ],
+    "descricao": "O único curandeiro S rank da Coreia. Sua habilidade de cura transcende os limites conhecidos."
+  },
+  {
+    "id": "goto_ryuji",
+    "nome": "Goto Ryuji",
+    "rank": "S",
+    "classe": "Espadachim Sombrio",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 110,
+      "agilidade": 140,
+      "inteligencia": 85,
+      "percepcao": 120,
+      "vitalidade": 90
+    },
+    "skills": [
+      "Fluxo Celestial",
+      "Golpe Assassino",
+      "Punhal das Sombras"
+    ],
+    "descricao": "O hunter mais forte do Japão e líder do Esquadrão Goto. Espadachim de velocidade sobre-humana."
+  },
+  {
+    "id": "christopher_reed",
+    "nome": "Christopher Reed",
+    "rank": "S",
+    "classe": "Mago Supremo",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 70,
+      "agilidade": 80,
+      "inteligencia": 160,
+      "percepcao": 130,
+      "vitalidade": 70
+    },
+    "skills": [
+      "Chuva de Meteoros",
+      "Domínio das Sombras",
+      "Explosão Flamejante"
+    ],
+    "descricao": "Hunter Nacional dos EUA. Mago de combate com poder destrutivo imenso e precisão cirúrgica."
+  },
+  {
+    "id": "jonas_van_andre",
+    "nome": "Jonas Van Andre",
+    "rank": "S",
+    "classe": "Cavaleiro Sagrado",
+    "foto": "https://res.cloudinary.com/dlmoujcpv/image/upload/v1776733419/trindade-1776733417142.jpg",
+    "disponivel": true,
+    "stats": {
+      "forca": 120,
+      "agilidade": 90,
+      "inteligencia": 80,
+      "percepcao": 85,
+      "vitalidade": 140
+    },
+    "skills": [
+      "Dança das Flores de Cerejeira",
+      "Golpe Trovão",
+      "Barreira Mágica"
+    ],
+    "descricao": "Hunter Nacional da França. Cavaleiro formidável com armadura encantada que repele qualquer tipo de magia."
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "total_arrecadado": 2,
+  "total_transacoes": 2,
+  "total_taxa": 0,
+  "total_creditado": 2,
+  "por_usuario": {
+    "559774004582": {
+      "nome": "Eduardo Dev </>",
+      "total_pagamentos": 2,
+      "valor_total": 2,
+      "taxa_total": 0,
+      "total_creditado": 2
+    }
+  },
+  "por_data": {
+    "2026-04-20": {
+      "total_transacoes": 1,
+      "valor_total": 1,
+      "taxa_total": 0,
+      "total_creditado": 1
+    },
+    "2026-04-25": {
+      "total_transacoes": 1,
+      "valor_total": 1,
+      "taxa_total": 0,
+      "total_creditado": 1
+    }
+  },
+  "ultima_atualizacao": "2026-04-25T04:43:05.479Z"
+}

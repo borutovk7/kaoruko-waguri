@@ -1,0 +1,101 @@
+[
+  {
+    "id": "559774004582@s.whatsapp.net",
+    "tempo": {
+      "dias": 0,
+      "total": 0,
+      "save": "19"
+    },
+    "infinito": true,
+    "advenced": false,
+    "afk": {
+      "auto": {
+        "funcao": false,
+        "horas": 4,
+        "save": {
+          "hora": "01",
+          "dia": "31",
+          "mes": "03",
+          "ano": "2026"
+        }
+      },
+      "dados": [
+        {
+          "ativo": true,
+          "auto": false,
+          "nome": "Eduardo Dev",
+          "dono": true,
+          "motivo": "tô dormindo não me atrapalhe!",
+          "data": "09/05",
+          "hora": "04:26"
+        }
+      ]
+    }
+  },
+  {
+    "id": "556182148430@s.whatsapp.net",
+    "tempo": {
+      "dias": 0,
+      "total": 0,
+      "save": "19"
+    },
+    "infinito": true,
+    "advenced": false,
+    "afk": {
+      "auto": {
+        "funcao": false,
+        "horas": 4,
+        "save": {
+          "hora": "10",
+          "dia": "04",
+          "mes": "04",
+          "ano": "2026"
+        }
+      },
+      "dados": [
+        {
+          "ativo": false,
+          "auto": false,
+          "nome": "+99 | @𝘵𝘩𝘦' 𝐊𝐢𝐫𝐚. </>",
+          "dono": true,
+          "motivo": "comendo quem marcou",
+          "data": "04/04",
+          "hora": "10:56"
+        }
+      ]
+    }
+  },
+  {
+    "id": "558892659041@s.whatsapp.net",
+    "tempo": {
+      "dias": 0,
+      "total": 0,
+      "save": "19"
+    },
+    "infinito": true,
+    "advenced": false,
+    "afk": {
+      "auto": {
+        "funcao": false,
+        "horas": 4,
+        "save": {
+          "hora": "12",
+          "dia": "11",
+          "mes": "05",
+          "ano": "2026"
+        }
+      },
+      "dados": [
+        {
+          "ativo": true,
+          "auto": false,
+          "nome": "Hzx </>",
+          "dono": true,
+          "motivo": "comendo o cu de quem me marco",
+          "data": "11/05",
+          "hora": "12:18"
+        }
+      ]
+    }
+  }
+]

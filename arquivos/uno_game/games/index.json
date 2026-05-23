@@ -1,0 +1,32 @@
+{
+  "games": {
+    "01353854-66d2-410f-a1be-2766ad9ac438": {
+      "gameId": "01353854-66d2-410f-a1be-2766ad9ac438",
+      "playerCount": 2,
+      "playerNames": [
+        "Eduardo Dev </>",
+        "..."
+      ],
+      "currentPlayer": "...",
+      "turnNumber": 15,
+      "gameOver": false,
+      "winner": null,
+      "createdAt": 1777203781121,
+      "updatedAt": 1777204822734
+    },
+    "9074ef3e-af3d-4ce1-b3a4-b4476149799e": {
+      "gameId": "9074ef3e-af3d-4ce1-b3a4-b4476149799e",
+      "playerCount": 2,
+      "playerNames": [
+        "Eduardo Dev </>",
+        "ʏǟʍɨӄʊ"
+      ],
+      "currentPlayer": "Eduardo Dev </>",
+      "turnNumber": 6,
+      "gameOver": false,
+      "winner": null,
+      "createdAt": 1777218704769,
+      "updatedAt": 1777219004860
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "apis": {
+    "API_KEY_WAGURI": "SUA_KEY_AQUI"
+  },
+  "sites": {
+    "okarunsite": "https://SEU_SITE_AQUI.com"
+  },
+  "groups": {}
+}

@@ -1,0 +1,6 @@
+{
+ "client_id_efi":"Client_Id_5ed69457584f4a1bc64144a13afc8b95c177af29",
+ "client_secret_efi":"Client_Secret_23590a8ace054c5c90eb202221f1e86246acf070",
+ "pixKey": "9f377182-588e-4949-80f1-9a3dd3b15962",
+ "mensagem": "Esta é a configuração do Scraper da Efi Pay, criado por Lucas Mod Domina e aprimorado por Paulo Mod Domina. Não remova esta mensagem, pois isso vai contra nossas diretrizes. O 'client_id' é o seu ID de cliente conforme a documentação da API da Efi, assim como o 'client_secret'. A 'pixkey' é a chave Pix do seu EfiBank."
+}
