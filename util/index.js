@@ -64,15 +64,10 @@ console.error(err.stack);
 });
 
 const getallcases = () => {
-if(global.__casesCached) return global.__casesCached
-// findindex = fs.readFileSync("index.js").toString().match(/case\s+'(.+?)'/g) || []
-findindex = []; // Neutralizado para evitar erro em arquivo ofuscado
-cstt = []
-// for(i of findindex) {
-cstt.push(i.split(`'`)[1])
-// }
-global.__casesCached = cstt
-return cstt
+  if(global.__casesCached) return global.__casesCached;
+  // Lógica de leitura de index.js removida para compatibilidade com ofuscação
+  global.__casesCached = [];
+  return [];
 }
 
 // ABAIXO: INÍCIO DE CONEXÃO
