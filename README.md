@@ -51,8 +51,8 @@ cd Kauroko-bot
 ### 4️⃣ Instalação de Dependências e Início
 ```bash
 npm install
-### ⚠️ IMPORTANTE (USUÁRIOS DE TERMUX)
-Se você estiver utilizando o **Termux**, execute o comando abaixo após instalar os módulos para garantir a build correta do Canvas:
+### ⚠️ COMANDO OBRIGATÓRIO (PÓS-INSTALAÇÃO)
+Após executar o `npm install`, você **PRECISA** rodar o comando abaixo em qualquer ambiente (VPS, Windows ou Termux) para garantir a build correta do módulo Canvas:
 ```bash
 node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
 ```
