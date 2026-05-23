@@ -1,11 +1,9 @@
 <p align="center">
   <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663625403694/xoeVzbTXMQLjtxbx.png" alt="Kaoruko System Banner" width="800">
 </p>
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&color=A020F0&center=true&vCenter=true&width=600&lines=KAORUKO+SYSTEM+BOT;INTELIGENTE+•+RÁPIDO+•+SEGURO;O+MELHOR+PARA+WHATSAPP" alt="Typing SVG" />
 </p>
-
 <p align="center">
   <a href="https://github.com/borutovk7">
     <img src="https://img.shields.io/badge/Autor-Eduardo%20Dev-purple?style=for-the-badge&logo=github" alt="Autor">
@@ -49,14 +47,21 @@ cd Kauroko-bot
 ```
 
 ### 4️⃣ Instalação de Dependências e Início
+
 ```bash
 npm install
-### ⚠️ COMANDO OBRIGATÓRIO (PÓS-INSTALAÇÃO)
+```
+
+#### ⚠️ COMANDO OBRIGATÓRIO (PÓS-INSTALAÇÃO)
 Após executar o `npm install`, você **PRECISA** rodar o comando abaixo em qualquer ambiente (VPS, Windows ou Termux) para garantir a build correta do módulo Canvas:
+
 ```bash
 node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
 ```
- && npm start
+
+#### Iniciar o Bot:
+```bash
+npm start
 ```
 
 ---
@@ -80,7 +85,6 @@ node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
 | :--- | :--- |
 | **Iniciar Bot** | `npm start` |
 | **Start do Bot** | `sh start.sh` |
-
 
 ---
 
