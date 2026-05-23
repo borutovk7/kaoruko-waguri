@@ -1,96 +1,38 @@
-<p align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663625403694/xoeVzbTXMQLjtxbx.png" alt="Kaoruko System Banner" width="800">
-</p>
+# 🪷 Kaoruko Waguri System 🪷
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&color=A020F0&center=true&vCenter=true&width=600&lines=KAORUKO+SYSTEM+BOT;INTELIGENTE+•+RÁPIDO+•+SEGURO;O+MELHOR+PARA+WHATSAPP" alt="Typing SVG" />
-</p>
+Este é o repositório oficial do sistema Kaoruko Waguri, totalmente otimizado e ofuscado para proteção do código.
 
-<p align="center">
-  <a href="https://github.com/borutovk7">
-    <img src="https://img.shields.io/badge/Autor-Eduardo%20Dev-purple?style=for-the-badge&logo=github" alt="Autor">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Versão-1.0.0-blueviolet?style=for-the-badge&logo=git" alt="Versão">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Status-Online-green?style=for-the-badge&logo=statuspage" alt="Status">
-  </a>
-</p>
+## 🚀 Instalação
 
----
+Para instalar e rodar o bot, siga os passos abaixo:
 
-## 🌟 Sobre o Projeto
+1. **Instalar dependências:**
+   ```bash
+   npm install
+   ```
 
-O **Kaoruko System** é um bot de WhatsApp de alto desempenho, focado em oferecer uma experiência completa de automação, entretenimento e segurança. Desenvolvido com as tecnologias mais recentes, ele combina inteligência artificial com uma interface de comandos intuitiva.
+2. **⚠️ Importante (Usuários de Termux):**
+   Se você estiver utilizando o **Termux**, é obrigatório executar o comando abaixo após a instalação dos módulos. Isso é necessário para a build correta do módulo Canvas no ambiente Android/Termux:
+   ```bash
+   node ./node_modules/@irithell-js/canvas-termux/dist/install.cjs
+   ```
 
-> "Sempre buscando melhorar. Este bot foi feito com o nome de uma pessoa muito importante para mim. Peço que tenha cuidado, pois deu trabalho para fazer." — **Eduardo Dev**
+3. **Configuração:**
+   Edite os arquivos em `configs/` com suas chaves de API e número de dono.
 
----
+4. **Iniciar o Bot:**
+   ```bash
+   sh start.sh
+   ```
 
-## 🚀 Instalação (Termux)
+## 🛠️ Modificações
+- Sistema totalmente ofuscado.
+- Injeção de contexto para funcionamento do Eval ofuscado.
+- Dependência customizada: `@boruto_vk7/baileys`.
 
-Siga os passos abaixo para instalar o bot no seu dispositivo Android via Termux:
-
-### 1️⃣ Atualização do Sistema
-```bash
-pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install git -y
-```
-
-### 2️⃣ Acesso ao Armazenamento
-```bash
-termux-setup-storage
-```
-
-### 3️⃣ Clonagem do Repositório
-```bash
-git clone https://github.com/borutovk7/Kauroko-bot
-cd Kauroko-bot
-```
-
-### 4️⃣ Instalação de Dependências e Início
-```bash
-npm install && npm start
-```
+## 📜 Créditos
+Todos os créditos originais deste projeto pertencem à **Lia** (ou Lya). 
+Esta versão foi modificada e otimizada por **Boruto**.
 
 ---
-
-## 🛠️ Funcionalidades Principais
-
-| Categoria | Descrição |
-| :--- | :--- |
-| **🛡️ Segurança** | Sistema Anti-Nuke, Anti-Link e proteção de grupos. |
-| **🤖 IA** | Integração com Google Gemini para conversas inteligentes. |
-| **🎮 Diversão** | Jogos como Uno, Jogo da Velha, Akinator e RPG Solo Leveling. |
-| **📥 Downloads** | Download automático de vídeos (YouTube, TikTok, Instagram). |
-| **💳 Economia** | Sistema de Pix, Aluguel e Saldo Virtual (Efipay). |
-| **🔞 NSFW** | Comandos adultos com sistema de verificação. |
-
----
-
-## ⚙️ Comandos de Inicialização
-
-| Ação | Comando |
-| :--- | :--- |
-| **Iniciar Bot** | `npm start` |
-| **Start do Bot** | `sh start.sh` |
-
-
----
-
-## 📞 Contato & Suporte
-
-Precisa de ajuda ou quer sugerir uma funcionalidade? Entre em contato diretamente com o desenvolvedor.
-
-<p align="left">
-  <a href="https://wa.me/559774004582">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>
-</p>
-
----
-
-<p align="center">
-  Desenvolvido com ❤️ por <b>Eduardo Dev</b><br>
-  © 2026 Kaoruko System - Todos os direitos reservados.
-</p>
+© Todos os Direitos Reservados a Eduh Dev & Boruto
